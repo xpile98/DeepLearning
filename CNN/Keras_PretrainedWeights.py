@@ -1,4 +1,8 @@
 # ResNet-34
+import os
+import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 from tensorflow import keras
 
 class ResidualUnit(keras.layers.Layer):
@@ -58,7 +62,7 @@ def plot_color_image(image):
     plt.axis("off")
 
 # 이미지넷 데이터셋에서 사전훈련된 가중치 다운로드
-model = keras.applications.resnet.ResNet50(weights="imagenet")
+model = keras.applications.resnet50.ResNet50(weights=None)
 
 # ResNet-50 입력에 맞추어 이미지 224 x 224픽셀로 변환
 images_resized = tf.image.resize(images, [224,224])
@@ -68,10 +72,10 @@ inputs = keras.applications.resnet.preprocess_input(images_resized*255)
 
 #예측 수행
 Y_proba = model.predict(inputs)
-Y_proba.shape
+print(Y_proba.shape)
 
 # 최상위 K개 예측
-top_K = keras.applications.resnet.decode_predictions(Y_proba,top=3)
+top_K = keras.applications.resnet.decode_predictions(Y_proba,top=5)
 for image_index in range(len(images)):
     print("Image #{}".format(image_index))
     plot_color_image(images_resized[image_index])
@@ -79,3 +83,4 @@ for image_index in range(len(images)):
     for class_id, name, y_proba in top_K[image_index]:
         print(" {} - {:12s} {:.2f}%".format(class_id,name,y_proba * 100))
     print()
+
