@@ -5,16 +5,21 @@ from tensorflow import keras
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
-dataset, info = tfds.load("tf_flowers", as_supervised=True, with_info=True)
-dataset_size = info.splits["train"].num_examples    # 3670
-class_names = info.features["label"].names           # ["dandelion", "daisy"]
-n_classes = info.features["label"].num_classes      # 5
+physical_devices = tf.config.list_physical_devices('GPU')
+tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-# 훈련세트 나누기
-test_split, valid_split, train_split = tfds.Split.TRAIN.subsplit([10,15,75])
-test_set = tfds.load("tf_flowers", split=test_split, as_supervised=True)
-valid_set = tfds.load("tf_flowers", split=test_split, as_supervised=True)
-train_set = tfds.load("tf_flowers", split=test_split, as_supervised=True)
+
+# 훈련세트 불러오고 나누기
+test_set, valid_set, train_set = tfds.load(
+    "tf_flowers",
+    split=["train[:10%]", "train[10%:25%]", "train[25%:]"],
+    as_supervised=True)
+
+
+builder = tfds.builder('tf_flowers')
+dataset_size =builder.info.splits["train"].num_examples     # 3670
+class_names = builder.info.features["label"].names          # ["dandelion", "daisy"]
+n_classes = builder.info.features["label"].num_classes      # 5
 
 # 데이터 전처리
 def preprocess(image, label):
@@ -53,3 +58,4 @@ for layer in base_model.layers:
 optimizer = keras.optimizers.SGD(lr=0.01, momentum=0.9, decay=0.001)
 model.compile(loss="sparse_categorical_crossentropy", optimizer=optimizer, metrics=["accuracy"])
 history = model.fit(train_set, epochs= 5, validation_data=valid_set)
+

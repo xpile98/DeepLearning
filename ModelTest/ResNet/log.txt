@@ -1,0 +1,155 @@
+C:\anaconda3\envs\DeepLearning\python.exe D:/Yongwon/DeepLearning/ModelTest/ResNet/ResNet50.py
+2022-04-13 15:23:54.410585: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2022-04-13 15:23:56.609430: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-04-13 15:23:56.610116: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2022-04-13 15:23:56.639617: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:b4:00.0 name: GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 8.00GiB deviceMemoryBandwidth: 417.29GiB/s
+2022-04-13 15:23:56.639839: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2022-04-13 15:23:56.645317: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2022-04-13 15:23:56.645445: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2022-04-13 15:23:56.648629: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2022-04-13 15:23:56.649608: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2022-04-13 15:23:56.657067: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2022-04-13 15:23:56.659712: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2022-04-13 15:23:56.660327: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2022-04-13 15:23:56.660499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2022-04-13 15:23:56.672101: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-04-13 15:23:56.673555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:b4:00.0 name: GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 8.00GiB deviceMemoryBandwidth: 417.29GiB/s
+2022-04-13 15:23:56.673843: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2022-04-13 15:23:56.673985: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2022-04-13 15:23:56.674126: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2022-04-13 15:23:56.674271: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2022-04-13 15:23:56.674411: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2022-04-13 15:23:56.674544: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2022-04-13 15:23:56.674660: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2022-04-13 15:23:56.674779: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2022-04-13 15:23:56.674920: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2022-04-13 15:23:57.181800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-04-13 15:23:57.181951: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2022-04-13 15:23:57.182024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2022-04-13 15:23:57.182218: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6177 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3070, pci bus id: 0000:b4:00.0, compute capability: 8.6)
+2022-04-13 15:23:57.182870: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Compile Start
+Fit Start
+2022-04-13 15:24:39.076096: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/5
+2022-04-13 15:24:40.795406: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2022-04-13 15:24:41.531291: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2022-04-13 15:24:41.717920: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2022-04-13 15:24:43.133174: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2022-04-13 15:24:43.166785: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2022-04-13 15:24:43.684504: W tensorflow/core/common_runtime/bfc_allocator.cc:314] Garbage collection: deallocate free memory regions (i.e., allocations) so that we can re-allocate a larger region to avoid OOM due to memory fragmentation. If you see this message frequently, you are running near the threshold of the available device memory and re-allocation may incur great performance overhead. You may try smaller batch sizes to observe the performance impact. Set TF_ENABLE_GPU_GARBAGE_COLLECTION=false if you'd like to disable this feature.
+2022-04-13 15:24:43.939392: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+1500/1500 [==============================] - 118s 76ms/step - loss: 21.7943 - accuracy: 0.8202 - val_loss: 1.2477 - val_accuracy: 0.9498
+Epoch 2/5
+1500/1500 [==============================] - 113s 76ms/step - loss: 1.2648 - accuracy: 0.9464 - val_loss: 1.0352 - val_accuracy: 0.9560
+Epoch 3/5
+1500/1500 [==============================] - 114s 76ms/step - loss: 1.0737 - accuracy: 0.9530 - val_loss: 0.9213 - val_accuracy: 0.9588
+Epoch 4/5
+1500/1500 [==============================] - 113s 76ms/step - loss: 0.8946 - accuracy: 0.9582 - val_loss: 0.8817 - val_accuracy: 0.9585
+Epoch 5/5
+1500/1500 [==============================] - 113s 76ms/step - loss: 0.8490 - accuracy: 0.9590 - val_loss: 0.8208 - val_accuracy: 0.9608
+Fit Start 2
+Epoch 1/100
+2022-04-13 15:34:14.389692: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2022-04-13 15:34:14.389999: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2022-04-13 15:34:14.400684: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2022-04-13 15:34:14.400971: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2022-04-13 15:34:14.446345: I tensorflow/stream_executor/cuda/cuda_driver.cc:789] failed to allocate 1.78G (1915523584 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2022-04-13 15:34:14.446506: I tensorflow/stream_executor/cuda/cuda_driver.cc:789] failed to allocate 1.61G (1723971328 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2022-04-13 15:34:14.446645: I tensorflow/stream_executor/cuda/cuda_driver.cc:789] failed to allocate 1.44G (1551574272 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2022-04-13 15:34:14.523884: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.27GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2022-04-13 15:34:14.524161: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.27GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2022-04-13 15:34:14.533822: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2022-04-13 15:34:14.534091: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+   6/1500 [..............................] - ETA: 4:35 - loss: 65.4907 - accuracy: 0.1191WARNING:tensorflow:Callback method `on_train_batch_end` is slow compared to the batch time (batch time: 0.0438s vs `on_train_batch_end` time: 0.1172s). Check your callbacks.
+1500/1500 [==============================] - 311s 205ms/step - loss: 6.7490 - accuracy: 0.1776 - val_loss: 2.0883 - val_accuracy: 0.3383
+
+val/train: 0.70
+Epoch 2/100
+1500/1500 [==============================] - 310s 207ms/step - loss: 1.7562 - accuracy: 0.3622 - val_loss: 1.7126 - val_accuracy: 0.4427
+
+val/train: 1.01
+Epoch 3/100
+1500/1500 [==============================] - 310s 207ms/step - loss: 1.5227 - accuracy: 0.4607 - val_loss: 1.4316 - val_accuracy: 0.5414
+
+val/train: 0.99
+Epoch 4/100
+1500/1500 [==============================] - 306s 204ms/step - loss: 1.2712 - accuracy: 0.5575 - val_loss: 1.2312 - val_accuracy: 0.6037
+
+val/train: 1.00
+Epoch 5/100
+1500/1500 [==============================] - 304s 202ms/step - loss: 1.1172 - accuracy: 0.6128 - val_loss: 1.1711 - val_accuracy: 0.6454
+
+val/train: 1.08
+Epoch 6/100
+1500/1500 [==============================] - 307s 205ms/step - loss: 0.9953 - accuracy: 0.6668 - val_loss: 0.9955 - val_accuracy: 0.7157
+
+val/train: 1.02
+Epoch 7/100
+1500/1500 [==============================] - 313s 209ms/step - loss: 0.8946 - accuracy: 0.7122 - val_loss: 0.8929 - val_accuracy: 0.7276
+
+val/train: 1.02
+Epoch 8/100
+1500/1500 [==============================] - 314s 209ms/step - loss: 0.8096 - accuracy: 0.7430 - val_loss: 0.8279 - val_accuracy: 0.7546
+
+val/train: 1.04
+Epoch 9/100
+1500/1500 [==============================] - 315s 210ms/step - loss: 0.7627 - accuracy: 0.7618 - val_loss: 0.7780 - val_accuracy: 0.7938
+
+val/train: 1.04
+Epoch 10/100
+1500/1500 [==============================] - 315s 210ms/step - loss: 0.7027 - accuracy: 0.7795 - val_loss: 0.6595 - val_accuracy: 0.8204
+
+val/train: 0.96
+Epoch 11/100
+1500/1500 [==============================] - 313s 209ms/step - loss: 0.6444 - accuracy: 0.8016 - val_loss: 0.7649 - val_accuracy: 0.7904
+
+val/train: 1.20
+Epoch 12/100
+1500/1500 [==============================] - 304s 203ms/step - loss: 0.6053 - accuracy: 0.8169 - val_loss: 0.6553 - val_accuracy: 0.8286
+
+val/train: 1.10
+Epoch 13/100
+1500/1500 [==============================] - 304s 202ms/step - loss: 0.5741 - accuracy: 0.8236 - val_loss: 0.6172 - val_accuracy: 0.8391
+
+val/train: 1.09
+Epoch 14/100
+1500/1500 [==============================] - 311s 207ms/step - loss: 0.5455 - accuracy: 0.8333 - val_loss: 0.5692 - val_accuracy: 0.8558
+
+val/train: 1.05
+Epoch 15/100
+1500/1500 [==============================] - 314s 209ms/step - loss: 0.5221 - accuracy: 0.8438 - val_loss: 0.5611 - val_accuracy: 0.8615
+
+val/train: 1.09
+Epoch 16/100
+1500/1500 [==============================] - 312s 208ms/step - loss: 0.5012 - accuracy: 0.8516 - val_loss: 0.5543 - val_accuracy: 0.8592
+
+val/train: 1.12
+Epoch 17/100
+1500/1500 [==============================] - 312s 208ms/step - loss: 0.4846 - accuracy: 0.8551 - val_loss: 0.5287 - val_accuracy: 0.8678
+
+val/train: 1.11
+Epoch 18/100
+1500/1500 [==============================] - 314s 209ms/step - loss: 0.4606 - accuracy: 0.8630 - val_loss: 0.4682 - val_accuracy: 0.8843
+
+val/train: 1.02
+Epoch 19/100
+1500/1500 [==============================] - 311s 208ms/step - loss: 0.4430 - accuracy: 0.8677 - val_loss: 0.5622 - val_accuracy: 0.8632
+
+val/train: 1.26
+Epoch 20/100
+1500/1500 [==============================] - 313s 209ms/step - loss: 0.4329 - accuracy: 0.8728 - val_loss: 0.5343 - val_accuracy: 0.8594
+
+val/train: 1.23
+Epoch 21/100
+1500/1500 [==============================] - 307s 205ms/step - loss: 0.4271 - accuracy: 0.8751 - val_loss: 0.4993 - val_accuracy: 0.8844
+
+val/train: 1.19
+Epoch 22/100
