@@ -14,10 +14,10 @@ model = keras.applications.resnet.ResNet50()
 # >> load dataset
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 # (60000, 28, 28)   # (60000,)  # (10000, 28, 28)   # (10000,)
-x_train = x_train[:6000]
-y_train = y_train[:6000]
-x_test = x_test[:1000]
-y_test = y_train[:1000]
+x_train = x_train[:60000]
+y_train = y_train[:60000]
+x_test = x_test[:10000]
+y_test = y_test[:10000]
 
 # >> preprocessing
 # 1) resize
@@ -27,10 +27,10 @@ x_test = tf.image.resize(x_test[..., tf.newaxis], (244, 244))
 x_train = np.concatenate((x_train, x_train, x_train),axis=-1)
 x_test = np.concatenate((x_test, x_test, x_test),axis=-1)
 # 3) split
-x_valid = x_train[4800:]
-x_train = x_train[:4800]
-y_valid = y_train[4800:]
-y_train = y_train[:4800]
+x_valid = x_train[48000:]
+x_train = x_train[:48000]
+y_valid = y_train[48000:]
+y_train = y_train[:48000]
 # call backs
 class PrintValTrainRatioCallback(keras.callbacks.Callback):     # 사용자 콜백 함수
     def on_epoch_end(self, epoch, logs=None):
@@ -39,6 +39,7 @@ class PrintValTrainRatioCallback(keras.callbacks.Callback):     # 사용자 콜�
 checkpoint_cb = keras.callbacks.ModelCheckpoint('ResNet50_TransferLearning.h5', save_best_only=True)
 early_stopping_cb = keras.callbacks.EarlyStopping(patience=10, restore_best_weights=True)
 user_cb = PrintValTrainRatioCallback()
+
 
 
 
@@ -67,12 +68,13 @@ model.compile(loss="sparse_categorical_crossentropy",
               optimizer=keras.optimizers.Adam(1e-5),
               metrics=["accuracy"])
 history = model.fit(x_train,y_train,
-                    epochs= 30, batch_size=32,
+                    epochs= 10, batch_size=32,
                     validation_data=(x_valid,y_valid),
                     callbacks=[checkpoint_cb, early_stopping_cb, user_cb])
 
 # >> save history
 hist_df = pd.DataFrame(history.history)
+import os
 hist_json_file = 'history.json'
 with open(hist_json_file, mode='w') as f:
     hist_df.to_json(f)
